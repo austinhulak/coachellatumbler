@@ -167,7 +167,7 @@ $(function() {
 			$('#nextTrack').show();
 		});
     	$('#loadTracks').hide();
-
+    	$('#desc').addClass('hidden-xs');
     	$('#site-name').show();
     	
   	});
@@ -192,4 +192,7 @@ $(function() {
 	  		$('#artist-info').html(tracks.username);
 		});
 	});
+
+
+
 	});
