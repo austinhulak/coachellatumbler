@@ -1,109 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-h1 {
-	font-family: "Helvetica" sans-serif;
-	font-size:45px;
-}
-
 .center {
 	margin:auto;
 }
-.button {
-	-moz-box-shadow:inset 0px 0px 0px -13px #fceaca;
-	-webkit-box-shadow:inset 0px 0px 0px -13px #fceaca;
-	box-shadow:inset 0px 0px 0px -13px #fceaca;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffce79), color-stop(1, #eeaf41) );
-	background:-moz-linear-gradient( center top, #ffce79 5%, #eeaf41 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce79', endColorstr='#eeaf41');
-	background-color:#ffce79;
-	-webkit-border-top-left-radius:9px;
-	-moz-border-radius-topleft:9px;
-	border-top-left-radius:9px;
-	-webkit-border-top-right-radius:9px;
-	-moz-border-radius-topright:9px;
-	border-top-right-radius:9px;
-	-webkit-border-bottom-right-radius:9px;
-	-moz-border-radius-bottomright:9px;
-	border-bottom-right-radius:9px;
-	-webkit-border-bottom-left-radius:9px;
-	-moz-border-radius-bottomleft:9px;
-	border-bottom-left-radius:9px;
-	text-indent:0px;
-	border:1px solid #eeb44f;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Courier New;
-	font-size:26px;
-	font-weight:bold;
-	font-style:normal;
-	height:61px;
-	line-height:61px;
-	width:50%;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 4px #ce8e28;
-}
-.button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eeaf41), color-stop(1, #ffce79) );
-	background:-moz-linear-gradient( center top, #eeaf41 5%, #ffce79 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeaf41', endColorstr='#ffce79');
-	background-color:#eeaf41;
-	cursor: pointer;
-}.button:active {
-	position:relative;
-	top:1px;
-}
+
 #main-content {
-	width:100%;
 	background-image:url('/assets/twilight-sky.jpg');
-	overflow:auto;
 	background-size: cover;
 	z-index:-10;
 }
@@ -120,65 +20,31 @@ h1 {
 	position: absolute;
 	width:50%;
 	bottom:0;
+	left:0;
 	background:url() 0 40px;
 	z-index: 0;
 }
 
 #hero-unit {
-	width:60%;
-	height:60%;
-	position:relative;
-	margin-top:2%;
-	background-color: white;
+	margin-top: 2em;
 	background-image:url('/assets/sprinkles.png');
 	background-repeat:repeat;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	padding-bottom: 1em;
 
 }
-
-#site-name {
-	text-align: center;
-	padding-top: 20px;
-}
-
-#site-name p {
-	margin:10px 25%;
-	font-family: "Helvetica" sans-serif;
-}
-#loadTracks {
-	margin-top: 50px;
-}
-#player {
-	width:75%;
-}
-
-#track {
-	z-index: 40;
-	height:460px;
+#nextTrack {
+  position: relative;
+  bottom:0px;
+  margin-right: 0px;
 }
 
 #artist-info {
-	float:left;
-	height:60px;
-	width:50%;
-	font-family: "Helvetica" sans-serif;
-	font-size:35px;
-	margin-left: 10px;
-	text-align: left;
+	margin-top:0;
 }
-#nextContainer {
-	float:right;
-	height:60px;
-	width:40%;
-	font-family: "Helvetica" sans-serif;
-	font-size:35px;
-	text-align: right;
-}
-#nextTrack {
-	height:40px;
-	line-height:40px;
-	font-size:20px;
-	margin-right:.2em;
-	padding-right:5px;
+
+#track {
+	padding-right: 0px;
+	padding-left: 0px;
 }
